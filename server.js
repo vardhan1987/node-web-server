@@ -22,7 +22,7 @@ app.use((req, res, next) => {
   });
   next();
 });
-// 
+//
 // app.use((req, res, next) => {
 //   res.render('maintenance.hbs');
 // });
@@ -55,6 +55,6 @@ app.get('/bad', (req, res) => {
     errorMessage: 'unable to handle request'
   });
 });
-app.listen(3000, () => {
-  console.log('server up on port 3000');
+app.listen(port, () => {
+  console.log(`server up on port ${port}`);
 });
